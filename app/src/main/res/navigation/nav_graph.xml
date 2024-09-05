@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:label="navigation"
+    app:startDestination="@id/listFragment">
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.to_doapp.ListFragment"
+        android:label="List Fragment"
+        tools:layout="@layout/fragment_list">
+        <action
+            android:id="@+id/action_listFragment_to_addEditFragment"
+            app:destination="@id/addEditFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addEditFragment"
+        android:name="com.example.to_doapp.AddEditFragment"
+        android:label="Add/Edit Fragment"
+        tools:layout="@layout/fragment_add_edit"/>
+</navigation>
